@@ -38,13 +38,9 @@ help:
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
-#clean:
-#	-rm -rf $(BUILDDIR)/*
-
-documentation_html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/documentation_html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/documentation_html."
+clean:
+#	-rm -rf $(BUILDDIR)/html/*
+#	-rm -rf $(BUILDDIR)/latex/*
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
